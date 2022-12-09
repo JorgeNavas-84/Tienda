@@ -1,17 +1,17 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad Ean (Bogotá - Colombia)
- * Programa de Ingeniería de Sistemas
+ * Universidad Ean (Bogotï¿½ - Colombia)
+ * Programa de Ingenierï¿½a de Sistemas
  * Licenciado bajo el esquema Academic Free License version 2.1
  * <p>
- * Desarrollo de Software - Guía 2 - Actividad 2
+ * Desarrollo de Software - Guï¿½a 2 - Actividad 2
  * Ejercicio: tienda
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 package mundo;
 
 /**
- * Tienda que maneja 4 productos.
+ * Tienda que maneja 4 productos. test
  */
 public class Tienda {
     // -----------------------------------------------------------------
@@ -51,10 +51,10 @@ public class Tienda {
      * Crea la tienda con sus 4 productos. <br>
      * <b> post: </b> El dinero en caja fue inicializado en 0.<br>
      * Los 4 productos fueron inicializados con los siguientes valores: <br>
-     * Producto 1 - Tipo: PAPELERIA, Nombre: Lápiz, Valor unitario: 550.0, Cantidad en bodega: 18, Cantidad mínima: 5, Imagen: lapiz.png. <br>
-     * Producto 2 - Tipo: DROGUERIA, Nombre: Aspirina, Valor unitario: 109.5, Cantidad en bodega: 25, Cantidad mínima: 8, Imagen: aspirina.png. <br>
-     * Producto 3 - Tipo: PAPELERIA, Nombre: Borrador, Valor unitario: 207.3, Cantidad en bodega: 30, Cantidad mínima: 10, Imagen: borrador.png. <br>
-     * Producto 4 - Tipo: SUPERMERCADO, Nombre: Pan, Valor unitario: 150.0, Cantidad en bodega: 15, Cantidad mínima: 20, Imagen: pan.png. <br>
+     * Producto 1 - Tipo: PAPELERIA, Nombre: Lï¿½piz, Valor unitario: 550.0, Cantidad en bodega: 18, Cantidad mï¿½nima: 5, Imagen: lapiz.png. <br>
+     * Producto 2 - Tipo: DROGUERIA, Nombre: Aspirina, Valor unitario: 109.5, Cantidad en bodega: 25, Cantidad mï¿½nima: 8, Imagen: aspirina.png. <br>
+     * Producto 3 - Tipo: PAPELERIA, Nombre: Borrador, Valor unitario: 207.3, Cantidad en bodega: 30, Cantidad mï¿½nima: 10, Imagen: borrador.png. <br>
+     * Producto 4 - Tipo: SUPERMERCADO, Nombre: Pan, Valor unitario: 150.0, Cantidad en bodega: 15, Cantidad mï¿½nima: 20, Imagen: pan.png. <br>
      */
     public Tienda() {
         producto1 = new Producto("papeleria", "Lapiz", 550.0, 18, 5, "lapiz.png");
@@ -65,7 +65,7 @@ public class Tienda {
     }
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
 
     /**
@@ -114,10 +114,10 @@ public class Tienda {
     }
 
     /**
-     * Retorna el producto con el nombre dado por parámetro.
+     * Retorna el producto con el nombre dado por parï¿½metro.
      *
      * @param pNombre Nombre del producto buscado. pNombre != null && pNombre != "".
-     * @return Producto con el nombre dado por parámetro, null si no lo encuentra.
+     * @return Producto con el nombre dado por parï¿½metro, null si no lo encuentra.
      */
     public Producto darProducto(String pNombre) {
         Producto buscado = null;
@@ -154,14 +154,14 @@ public class Tienda {
     }
 
     /**
-     * Retorna el producto con más unidades vendidas.
+     * Retorna el producto con mï¿½s unidades vendidas.
      *
-     * @return Producto con más unidades vendidas. Null si ningún producto tiene unidades vendidas.
+     * @return Producto con mï¿½s unidades vendidas. Null si ningï¿½n producto tiene unidades vendidas.
      */
     public Producto darProductoMasVendido() {
         Producto masVendido = null;
 
-        // TODO: Obtener y retornar el nombre del producto más vendido
+        // TODO: Obtener y retornar el nombre del producto mï¿½s vendido
         int ventas1 = producto1.darCantidadUnidadesVendidas();
         int ventas2 = producto2.darCantidadUnidadesVendidas();
         int ventas3 = producto3.darCantidadUnidadesVendidas();
@@ -188,7 +188,7 @@ public class Tienda {
     /**
      * Retorna el producto con menos unidades vendidas.
      *
-     * @return Producto con menos unidades vendidas. Null si ningún producto tiene unidades vendidas.
+     * @return Producto con menos unidades vendidas. Null si ningï¿½n producto tiene unidades vendidas.
      */
     public Producto darProductoMenosVendido() {
         Producto menosVendido = null;
@@ -215,9 +215,9 @@ public class Tienda {
     }
 
     /**
-     * Vende una cantidad de unidades de producto de la tienda, dado su nombre por parámetro. <br>
-     * <b>post: </b> Disminuyó la cantidad de unidades del producto dado
-     * y se actualizó el dinero de la caja a partir de la cantidad real vendida multiplicada
+     * Vende una cantidad de unidades de producto de la tienda, dado su nombre por parï¿½metro. <br>
+     * <b>post: </b> Disminuyï¿½ la cantidad de unidades del producto dado
+     * y se actualizï¿½ el dinero de la caja a partir de la cantidad real vendida multiplicada
      * por el precio final (con IVA) del producto vendido..
      *
      * @param pNombreProducto Nombre del producto a vender.
@@ -237,7 +237,7 @@ public class Tienda {
 
     /**
      * Abastece un producto dado su nombre, con la cantidad de unidades dadas. <br>
-     * <b>post: </b> Aumentó la cantidad de unidades en bodega del producto dado.
+     * <b>post: </b> Aumentï¿½ la cantidad de unidades en bodega del producto dado.
      *
      * @param pNombreProducto Nombre del producto a abastecer.
      * @param pCantidad       La cantidad de unidades a abastecer. cantidad >= 0.
@@ -257,23 +257,23 @@ public class Tienda {
     }
 
     /**
-     * Cambia el producto que tiene el nombre actual con los nuevos valores dados por parámetro. <br>
-     * <b>post: </b> El nombre, tipo, valor unitario, cantidad en bodega y cantidad mínima fueron cambiados con los valores dados por parámetro.
+     * Cambia el producto que tiene el nombre actual con los nuevos valores dados por parï¿½metro. <br>
+     * <b>post: </b> El nombre, tipo, valor unitario, cantidad en bodega y cantidad mï¿½nima fueron cambiados con los valores dados por parï¿½metro.
      *
      * @param pNombreActual   Nombre actual del producto.
      * @param pNombreNuevo    Nuevo nombre del producto.
      * @param pTipo           Tipo del producto.
      * @param pValorUnitario  Valor unitario del producto
      * @param pCantidadBodega Cantidad en bodega del producto.
-     * @param pCantidadMinima Cantidad mínima en bodega para hacer un pedido del producto.
+     * @param pCantidadMinima Cantidad mï¿½nima en bodega para hacer un pedido del producto.
      * @param pRutaImagen     Ruta de la imagen del producto.
-     * @return Retorna true si cambió la información del producto,
-     * Retorna false si ya existía un producto con el nuevo nombre.
+     * @return Retorna true si cambiï¿½ la informaciï¿½n del producto,
+     * Retorna false si ya existï¿½a un producto con el nuevo nombre.
      */
     public boolean cambiarProducto(String pNombreActual, String pNombreNuevo, String pTipo, double pValorUnitario, int pCantidadBodega, int pCantidadMinima, String pRutaImagen) {
         boolean cambio = false;
 
-        // TODO: Cambiar la información del producto, si y solo si, no existe el producto
+        // TODO: Cambiar la informaciï¿½n del producto, si y solo si, no existe el producto
         // TODO: con el nombre nuevo.
         if (pNombreActual.equals(pNombreNuevo) || darProducto(pNombreNuevo) == null){
             if (producto1.darNombre().equals(pNombreActual)){
@@ -292,7 +292,7 @@ public class Tienda {
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de Extensiï¿½n
     // -----------------------------------------------------------------
 
     /**
@@ -317,7 +317,7 @@ public class Tienda {
     }
 
     /**
-     * Obtiene el nombre del producto más barato de la tienda
+     * Obtiene el nombre del producto mï¿½s barato de la tienda
      */
     public String metodo2() {
         if(producto1.darValorUnitario() < producto2.darValorUnitario() &&
