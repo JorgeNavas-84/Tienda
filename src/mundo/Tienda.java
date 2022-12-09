@@ -11,7 +11,7 @@
 package mundo;
 
 /**
- * Tienda que maneja 4 productos. test
+ * Tienda que maneja 4 productos. test Nueva RAMA
  */
 public class Tienda {
     // -----------------------------------------------------------------
